@@ -1,0 +1,36 @@
+using unityengine;
+using unityengine.scenemanager;
+
+public 
+
+public static bool GameIsPaused = false;
+
+void update(){
+if (inut.getkeydown(keycode.escape)) {
+   //these are refrences that refrence the voids that are declared down their.
+   if (GameIsPaused){
+   resume();
+   }else {
+   pause();
+   
+   }
+}
+
+}
+
+
+void resume() {
+scene.setctive = false;
+time.timescale = 1f;
+GameIsPaused = true;
+}
+
+void pause() {
+Scene.Setactive("Menu");
+time.timescale = 0f;
+GameIsPaused = true;
+}
+
+void Quit(){
+applicatioen.quit();
+}
